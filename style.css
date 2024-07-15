@@ -149,19 +149,6 @@ body, html {
         width: 60vw;
         height: 50vh;
     }
-
-    .content h3 {
-        font-size: 1.8rem;
-    }
-    
-    .content h1 {
-        font-size: 2.5rem;
-    }
-    
-    .content p {
-        font-size: 2rem;
-        text-align: justify;
-    }
 }
 
 /* Extra Small Screens */
@@ -174,18 +161,6 @@ body, html {
         width: 50vw;
         height: 30vh;
     }
-    .content h3 {
-        font-size: 1.8rem;
-    }
-    
-    .content h1 {
-        font-size: 2.5rem;
-    }
-    
-    .content p {
-        font-size: 2rem;
-        text-align: justify;
-    }
 }
 
 /* Extra Small Screens */
@@ -194,7 +169,10 @@ body, html {
         width: 80vw;
         height: 40vh;
     }
+}
 
+/* Adjust font sizes for smaller screens */
+@media (max-width: 992px), (max-width: 905px), (max-width: 576px) {
     .content h3 {
         font-size: 1.8rem;
     }
@@ -206,6 +184,8 @@ body, html {
     .content p {
         font-size: 2rem;
         text-align: justify;
+        text-justify: inter-word;
+        word-spacing: 0.05em;
+        hyphens: auto;
     }
-    
 }
